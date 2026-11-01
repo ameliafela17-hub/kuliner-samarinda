@@ -1,0 +1,301 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuliner Samarinda</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fffaf3;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #8b3a24;
+            color: white;
+            padding: 25px 8%;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        nav {
+            background-color: #632718;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 55px 20px;
+            background: linear-gradient(135deg, #ffe5c2, #f8c58b);
+        }
+
+        .hero h2 {
+            font-size: 30px;
+            color: #632718;
+            margin-bottom: 12px;
+        }
+
+        .hero p {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .container {
+            padding: 40px 8%;
+        }
+
+        .container h2 {
+            text-align: center;
+            color: #8b3a24;
+            margin-bottom: 10px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #666;
+        }
+
+        .food-list {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 25px;
+        }
+
+        .food-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+            transition: transform 0.3s;
+        }
+
+        .food-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .food-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-color: #eee;
+        }
+
+        .food-info {
+            padding: 20px;
+        }
+
+        .food-info h3 {
+            color: #8b3a24;
+            margin-bottom: 10px;
+        }
+
+        .food-info p {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .location-btn {
+            display: inline-block;
+            margin-top: 8px;
+            background-color: #8b3a24;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .location-btn:hover {
+            background-color: #632718;
+        }
+
+        footer {
+            text-align: center;
+            padding: 22px;
+            background-color: #632718;
+            color: white;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 800px) {
+            .food-list {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 550px) {
+            .food-list {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 25px;
+            }
+
+            .hero h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🍜 Kuliner Samarinda</h1>
+        <p>Jelajahi Rasa, Temukan Tempat Favoritmu!</p>
+    </header>
+
+    <nav>
+        <a href="#beranda">Beranda</a>
+        <a href="#kuliner">Daftar Kuliner</a>
+        <a href="#tentang">Tentang</a>
+    </nav>
+
+    <section class="hero" id="beranda">
+        <h2>Wisata Kuliner Kota Samarinda</h2>
+        <p>
+            Temukan berbagai tempat makan menarik di Samarinda,
+            mulai dari makanan khas daerah hingga hidangan favorit
+            yang cocok dinikmati bersama keluarga dan teman.
+        </p>
+    </section>
+
+    <section class="container" id="kuliner">
+        <h2>Rekomendasi Tempat Makan</h2>
+        <p class="intro">
+            Yuk, kenali tempat makan pilihan yang ada di Samarinda!
+        </p>
+
+        <div class="food-list">
+
+            <!-- WARUNG MAKAN 1 -->
+            <div class="food-card">
+                <img
+                    src="fotowarung1.jpg.jpeg"
+                    alt="foto warung makan kesatu">
+
+                <div class="food-info">
+                    <h3>AYAM GEPREK REMPAH</h3>
+                    <p>
+                        <strong>Menu andalan:</strong>
+                        Nasi Geprek Ayam Rempah
+                    </p>
+                    <p>
+                        <strong>Alamat:</strong>
+                        Jl. KH.Harun Nafsi
+                    </p>
+                    <p>
+                        RASAKAN KELEZATAN AYAM GEPREK REMPAH
+                    </p>
+
+                    <a
+                        class="location-btn"
+                        href="https://maps.app.goo.gl/ARLfHbhLHS4LxBwF7"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        📍 Lihat Lokasi
+                    </a>
+                </div>
+            </div>
+
+            <!-- WARUNG MAKAN 2 -->
+            <div class="food-card">
+                <img
+                    src="fotowarung2.jpg.jpeg"
+                    alt="Foto warung makan kedua">
+
+                <div class="food-info">
+                    <h3>WARUNG BEBEK BLITAR</h3>
+                    <p>
+                        <strong>Menu andalan:</strong>
+                        Nasi Ayam Ganje
+                    </p>
+                    <p>
+                        <strong>Alamat:</strong>
+                        Jl. H. A. M. M. Rifaddin
+                    </p>
+                    <p>
+                        Warung bebek Blitar
+                    </p>
+
+                    <a
+                        class="location-btn"
+                        href="https://maps.app.goo.gl/RY4vNhKsqm25m7c67"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        📍 Lihat Lokasi
+                    </a>
+                </div>
+            </div>
+
+            <!-- WARUNG MAKAN 3 -->
+            <div class="food-card">
+                <img
+                    src="https://placehold.co/600x400/f2d5b0/633b24?text=Foto+Warung+3"
+                    alt="Foto warung makan ketiga">
+
+                <div class="food-info">
+                    <h3>NAMA WARUNG MAKAN 3</h3>
+                    <p>
+                        <strong>Menu andalan:</strong>
+                        ISI MENU ANDALAN DI SINI
+                    </p>
+                    <p>
+                        <strong>Alamat:</strong>
+                        ISI ALAMAT WARUNG DI SINI
+                    </p>
+                    <p>
+                        ISI DESKRIPSI SINGKAT WARUNG DI SINI
+                    </p>
+
+                    <a
+                        class="location-btn"
+                        href="TEMPEL_LINK_GOOGLE_MAPS_3_DI_SINI"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        📍 Lihat Lokasi
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="container" id="tentang">
+        <h2>Tentang Website</h2>
+        <p class="intro">
+            Website ini dibuat untuk memperkenalkan tempat makan
+            di Kota Samarinda agar pengunjung dapat
+            menemukan pilihan kuliner beserta lokasi tempatnya.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Kuliner Samarinda | Jelajahi Kuliner Lokal</p>
+    </footer>
+
+</body>
+</html>
